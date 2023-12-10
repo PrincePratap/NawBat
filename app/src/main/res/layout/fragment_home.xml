@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/RvMainHome"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="@dimen/_35sdp"
+        android:id="@+id/toolbarHome"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_height="?actionBarSize">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/searchView"
+                android:layout_toStartOf="@id/imgNotification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/background_searchview">
+
+                <ImageView
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_home"/>
+                <TextView
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/lightBlack"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search.."/>
+
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imgNotification"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toStartOf="@id/imgProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notification_icon"/>
+
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profilepic"/>
+
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_below="@id/toolbarHome"
+        android:id="@+id/bottom_nav_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/home2_nav_graph" />
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp">
+            <LinearLayout
+                android:id="@+id/PlaylistLayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/playlist_icon_un"/>
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Playlist"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LibraryLayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lyrics_icon_un"/>
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Library"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/HomeLayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_icon_blue"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ArticlesLayouts"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/article_icon_un"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Articles" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/EventsLayout"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/event_icon_un"/>
+                <TextView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Events"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    
+    
+
+   
+
+</RelativeLayout>

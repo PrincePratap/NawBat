@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetStartedFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/image" />
+
+        <TextView
+            android:id="@+id/tv_find_rhythm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/find_your_rhythm"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_with"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/with"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_newbat_gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_with"
+                android:text="@string/nawbat"
+                android:textColor="#008000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rv_with_Nawbat_getStart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/experience_music_in_a_new_note_n_discover_listen_enjoy"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+
+
+        <TextView
+            android:id="@+id/textSignUpFreeGet"
+             style="@style/MainButtonStyle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_signup_btn"
+            android:elevation="@dimen/_5sdp"
+            android:text="@string/sign_up_free"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/textLoginGet"
+            style="@style/MainButtonStyle"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/background_login_btn"
+            android:elevation="@dimen/_5sdp"
+            android:text="@string/login"
+            android:textColor="@color/black" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

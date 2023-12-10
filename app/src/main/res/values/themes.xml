@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NawBat" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+
+    <style name="Theme.NawBat" parent="Base.Theme.NawBat" />
+
+    <style name="MainButtonStyle" parent="Base.Theme.NawBat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_35sdp</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="MarginStyle" parent="Base.Theme.NawBat">
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+    </style>
+
+</resources>

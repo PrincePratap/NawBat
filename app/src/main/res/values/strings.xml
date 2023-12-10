@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">NawBat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Get Started
+    <string name="find_your_rhythm">Find Your Rhythm</string>
+    <string name="with">with</string>
+    <string name="nawbat">NawBat</string>
+    <string name="experience_music_in_a_new_note_n_discover_listen_enjoy">Experience Music in a New Note: \n Discover, Listen, Enjoy</string>
+    <string name="sign_up_free">Sign up free</string>
+    <string name="login">Login</string>
+    //SignUp
+    <string name="enter_your_username">Enter your username</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="continuebtnString">Continue</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+
+</resources>

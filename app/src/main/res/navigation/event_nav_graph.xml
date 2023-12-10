@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_nav_graph"
+    app:startDestination="@id/eventFragment2">
+
+    <fragment
+        android:id="@+id/eventFragment2"
+        android:name="com.nawbat.EventFragment"
+        android:label="fragment_event"
+        tools:layout="@layout/fragment_event" />
+</navigation>
